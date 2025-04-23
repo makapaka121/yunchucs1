@@ -1,0 +1,28 @@
+test_cases:
+  - name: "有效用户登录"
+    username: "fangwei"
+    password: "Fw1234567"
+    expected:
+      success: true
+      error_msg: ""
+
+  - name: "空密码测试"
+    username: "fangwei"
+    password: ""
+    expected:
+      success: false
+      error_msg: "密码不能为空"
+
+  - name: "错误密码测试"
+    username: "fangwei"
+    password: "Fw1234"
+    expected:
+      success: false
+      error_msg: "用户名或密码错误"
+
+  - name: "错误密码测试"
+    username: "fangwe"
+    password: "Fw1234567"
+    expected:
+      success: false
+      error_msg: "用户名或密码错误"
