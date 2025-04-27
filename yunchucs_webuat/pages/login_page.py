@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 # from config.settings import Settings
-from config.settings import Settings
+from yunchucs_webuat.config.settings import Settings
 class LoginPage:
     """登录页面操作封装"""
 

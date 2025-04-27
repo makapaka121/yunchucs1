@@ -2,7 +2,7 @@ import logging
 import sys
 from pathlib import Path
 from datetime import datetime
-from config.settings import Settings
+from yunchucs_webuat.config.settings import Settings
 
 
 class UTF8StreamHandler(logging.StreamHandler):

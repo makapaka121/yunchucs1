@@ -2,11 +2,10 @@ import pytest
 import yaml
 import time
 from pathlib import Path
-from utils.webdriver_factory import WebDriverFactory
-from pages.login_page import LoginPage
-from utils.logger import logger
-from config.settings import Settings
-
+from yunchucs_webuat.pages.login_page import LoginPage
+from yunchucs_webuat.utils.logger import logger
+from yunchucs_webuat.config.settings import Settings
+from yunchucs_webuat.utils.webdriver_factory import WebDriverFactory
 
 # 加载测试数据
 def load_cases():
@@ -66,3 +65,4 @@ class TestLogin:
 
         finally:
             logger.info(f"测试用例 {case['name']} 执行完成")
+

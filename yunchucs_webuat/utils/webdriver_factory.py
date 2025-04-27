@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from config.settings import Settings
+from yunchucs_webuat.config.settings import Settings
 
 
 class WebDriverFactory:
